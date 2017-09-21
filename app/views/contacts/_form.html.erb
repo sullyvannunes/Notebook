@@ -22,8 +22,8 @@
   </div>
 
   <div class="field">
-    <%= form.label :kind_id %>
-    <%= form.text_field :kind_id, id: :contact_kind_id %>
+    <%= form.label :kind %>
+    <%= collection_select @contact, :kind_id, @kinds, :id, :description %>
   </div>
 
   <div class="field">
