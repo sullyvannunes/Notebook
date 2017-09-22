@@ -17,7 +17,7 @@ class KindsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create kind" do
     assert_difference('Kind.count') do
-      post kinds_url, params: { kind: { descrption: @kind.descrption } }
+      post kinds_url, params: { kind: { description: @kind.description } }
     end
 
     assert_redirected_to kind_url(Kind.last)
@@ -34,7 +34,7 @@ class KindsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update kind" do
-    patch kind_url(@kind), params: { kind: { descrption: @kind.descrption } }
+    patch kind_url(@kind), params: { kind: { description: @kind.description } }
     assert_redirected_to kind_url(@kind)
   end
 
