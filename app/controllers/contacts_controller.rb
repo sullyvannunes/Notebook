@@ -20,6 +20,7 @@ class ContactsController < ApplicationController
 
   # GET /contacts/1/edit
   def edit
+    @kinds = Kind.all
   end
 
   # POST /contacts
