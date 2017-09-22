@@ -1,0 +1,618 @@
+--- !ruby/object:ActiveRecord::ConnectionAdapters::SchemaCache
+columns:
+  addresses:
+  - &29 !ruby/object:ActiveRecord::ConnectionAdapters::MySQL::Column
+    name: id
+    table_name: addresses
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::MySQL::TypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@extra
+      ? - &1 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: bigint(20)
+          type: :integer
+          limit: 8
+          precision: 
+          scale: 
+        - auto_increment
+      : *1
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &30 !ruby/object:ActiveRecord::ConnectionAdapters::MySQL::Column
+    name: street
+    table_name: addresses
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::MySQL::TypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@extra
+      ? - &2 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: varchar(255)
+          type: :string
+          limit: 255
+          precision: 
+          scale: 
+        - ''
+      : *2
+    'null': true
+    default: 
+    default_function: 
+    collation: utf8_general_ci
+    comment: 
+  - &31 !ruby/object:ActiveRecord::ConnectionAdapters::MySQL::Column
+    name: city
+    table_name: addresses
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::MySQL::TypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@extra
+      ? - &3 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: varchar(255)
+          type: :string
+          limit: 255
+          precision: 
+          scale: 
+        - ''
+      : *3
+    'null': true
+    default: 
+    default_function: 
+    collation: utf8_general_ci
+    comment: 
+  - &32 !ruby/object:ActiveRecord::ConnectionAdapters::MySQL::Column
+    name: state
+    table_name: addresses
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::MySQL::TypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@extra
+      ? - &4 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: varchar(255)
+          type: :string
+          limit: 255
+          precision: 
+          scale: 
+        - ''
+      : *4
+    'null': true
+    default: 
+    default_function: 
+    collation: utf8_general_ci
+    comment: 
+  - &33 !ruby/object:ActiveRecord::ConnectionAdapters::MySQL::Column
+    name: contact_id
+    table_name: addresses
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::MySQL::TypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@extra
+      ? - &5 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: bigint(20)
+          type: :integer
+          limit: 8
+          precision: 
+          scale: 
+        - ''
+      : *5
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &34 !ruby/object:ActiveRecord::ConnectionAdapters::MySQL::Column
+    name: created_at
+    table_name: addresses
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::MySQL::TypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@extra
+      ? - &6 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: datetime
+          type: :datetime
+          limit: 
+          precision: 0
+          scale: 
+        - ''
+      : *6
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &35 !ruby/object:ActiveRecord::ConnectionAdapters::MySQL::Column
+    name: updated_at
+    table_name: addresses
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::MySQL::TypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@extra
+      ? - &7 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: datetime
+          type: :datetime
+          limit: 
+          precision: 0
+          scale: 
+        - ''
+      : *7
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  ar_internal_metadata:
+  - &36 !ruby/object:ActiveRecord::ConnectionAdapters::MySQL::Column
+    name: key
+    table_name: ar_internal_metadata
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::MySQL::TypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@extra
+      ? - &8 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: varchar(255)
+          type: :string
+          limit: 255
+          precision: 
+          scale: 
+        - ''
+      : *8
+    'null': false
+    default: 
+    default_function: 
+    collation: utf8_general_ci
+    comment: 
+  - &37 !ruby/object:ActiveRecord::ConnectionAdapters::MySQL::Column
+    name: value
+    table_name: ar_internal_metadata
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::MySQL::TypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@extra
+      ? - &9 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: varchar(255)
+          type: :string
+          limit: 255
+          precision: 
+          scale: 
+        - ''
+      : *9
+    'null': true
+    default: 
+    default_function: 
+    collation: utf8_general_ci
+    comment: 
+  - &38 !ruby/object:ActiveRecord::ConnectionAdapters::MySQL::Column
+    name: created_at
+    table_name: ar_internal_metadata
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::MySQL::TypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@extra
+      ? - &10 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: datetime
+          type: :datetime
+          limit: 
+          precision: 0
+          scale: 
+        - ''
+      : *10
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &39 !ruby/object:ActiveRecord::ConnectionAdapters::MySQL::Column
+    name: updated_at
+    table_name: ar_internal_metadata
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::MySQL::TypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@extra
+      ? - &11 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: datetime
+          type: :datetime
+          limit: 
+          precision: 0
+          scale: 
+        - ''
+      : *11
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  contacts:
+  - &40 !ruby/object:ActiveRecord::ConnectionAdapters::MySQL::Column
+    name: id
+    table_name: contacts
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::MySQL::TypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@extra
+      ? - &12 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: bigint(20)
+          type: :integer
+          limit: 8
+          precision: 
+          scale: 
+        - auto_increment
+      : *12
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &41 !ruby/object:ActiveRecord::ConnectionAdapters::MySQL::Column
+    name: name
+    table_name: contacts
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::MySQL::TypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@extra
+      ? - &13 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: varchar(255)
+          type: :string
+          limit: 255
+          precision: 
+          scale: 
+        - ''
+      : *13
+    'null': true
+    default: 
+    default_function: 
+    collation: utf8_general_ci
+    comment: 
+  - &42 !ruby/object:ActiveRecord::ConnectionAdapters::MySQL::Column
+    name: email
+    table_name: contacts
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::MySQL::TypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@extra
+      ? - &14 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: varchar(255)
+          type: :string
+          limit: 255
+          precision: 
+          scale: 
+        - ''
+      : *14
+    'null': true
+    default: 
+    default_function: 
+    collation: utf8_general_ci
+    comment: 
+  - &43 !ruby/object:ActiveRecord::ConnectionAdapters::MySQL::Column
+    name: kind_id
+    table_name: contacts
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::MySQL::TypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@extra
+      ? - &15 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: bigint(20)
+          type: :integer
+          limit: 8
+          precision: 
+          scale: 
+        - ''
+      : *15
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &44 !ruby/object:ActiveRecord::ConnectionAdapters::MySQL::Column
+    name: rmk
+    table_name: contacts
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::MySQL::TypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@extra
+      ? - &16 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: text
+          type: :text
+          limit: 65535
+          precision: 
+          scale: 
+        - ''
+      : *16
+    'null': true
+    default: 
+    default_function: 
+    collation: utf8_general_ci
+    comment: 
+  - &45 !ruby/object:ActiveRecord::ConnectionAdapters::MySQL::Column
+    name: created_at
+    table_name: contacts
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::MySQL::TypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@extra
+      ? - &17 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: datetime
+          type: :datetime
+          limit: 
+          precision: 0
+          scale: 
+        - ''
+      : *17
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &46 !ruby/object:ActiveRecord::ConnectionAdapters::MySQL::Column
+    name: updated_at
+    table_name: contacts
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::MySQL::TypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@extra
+      ? - &18 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: datetime
+          type: :datetime
+          limit: 
+          precision: 0
+          scale: 
+        - ''
+      : *18
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  kinds:
+  - &47 !ruby/object:ActiveRecord::ConnectionAdapters::MySQL::Column
+    name: id
+    table_name: kinds
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::MySQL::TypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@extra
+      ? - &19 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: bigint(20)
+          type: :integer
+          limit: 8
+          precision: 
+          scale: 
+        - auto_increment
+      : *19
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &48 !ruby/object:ActiveRecord::ConnectionAdapters::MySQL::Column
+    name: description
+    table_name: kinds
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::MySQL::TypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@extra
+      ? - &20 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: varchar(255)
+          type: :string
+          limit: 255
+          precision: 
+          scale: 
+        - ''
+      : *20
+    'null': true
+    default: 
+    default_function: 
+    collation: utf8_general_ci
+    comment: 
+  - &49 !ruby/object:ActiveRecord::ConnectionAdapters::MySQL::Column
+    name: created_at
+    table_name: kinds
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::MySQL::TypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@extra
+      ? - &21 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: datetime
+          type: :datetime
+          limit: 
+          precision: 0
+          scale: 
+        - ''
+      : *21
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &50 !ruby/object:ActiveRecord::ConnectionAdapters::MySQL::Column
+    name: updated_at
+    table_name: kinds
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::MySQL::TypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@extra
+      ? - &22 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: datetime
+          type: :datetime
+          limit: 
+          precision: 0
+          scale: 
+        - ''
+      : *22
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  phones:
+  - &51 !ruby/object:ActiveRecord::ConnectionAdapters::MySQL::Column
+    name: id
+    table_name: phones
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::MySQL::TypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@extra
+      ? - &23 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: bigint(20)
+          type: :integer
+          limit: 8
+          precision: 
+          scale: 
+        - auto_increment
+      : *23
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &52 !ruby/object:ActiveRecord::ConnectionAdapters::MySQL::Column
+    name: phone
+    table_name: phones
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::MySQL::TypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@extra
+      ? - &24 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: varchar(255)
+          type: :string
+          limit: 255
+          precision: 
+          scale: 
+        - ''
+      : *24
+    'null': true
+    default: 
+    default_function: 
+    collation: utf8_general_ci
+    comment: 
+  - &53 !ruby/object:ActiveRecord::ConnectionAdapters::MySQL::Column
+    name: contact_id
+    table_name: phones
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::MySQL::TypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@extra
+      ? - &25 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: bigint(20)
+          type: :integer
+          limit: 8
+          precision: 
+          scale: 
+        - ''
+      : *25
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &54 !ruby/object:ActiveRecord::ConnectionAdapters::MySQL::Column
+    name: created_at
+    table_name: phones
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::MySQL::TypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@extra
+      ? - &26 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: datetime
+          type: :datetime
+          limit: 
+          precision: 0
+          scale: 
+        - ''
+      : *26
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &55 !ruby/object:ActiveRecord::ConnectionAdapters::MySQL::Column
+    name: updated_at
+    table_name: phones
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::MySQL::TypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@extra
+      ? - &27 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: datetime
+          type: :datetime
+          limit: 
+          precision: 0
+          scale: 
+        - ''
+      : *27
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  schema_migrations:
+  - &56 !ruby/object:ActiveRecord::ConnectionAdapters::MySQL::Column
+    name: version
+    table_name: schema_migrations
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::MySQL::TypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@extra
+      ? - &28 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: varchar(255)
+          type: :string
+          limit: 255
+          precision: 
+          scale: 
+        - ''
+      : *28
+    'null': false
+    default: 
+    default_function: 
+    collation: utf8_general_ci
+    comment: 
+columns_hash:
+  addresses:
+    id: *29
+    street: *30
+    city: *31
+    state: *32
+    contact_id: *33
+    created_at: *34
+    updated_at: *35
+  ar_internal_metadata:
+    key: *36
+    value: *37
+    created_at: *38
+    updated_at: *39
+  contacts:
+    id: *40
+    name: *41
+    email: *42
+    kind_id: *43
+    rmk: *44
+    created_at: *45
+    updated_at: *46
+  kinds:
+    id: *47
+    description: *48
+    created_at: *49
+    updated_at: *50
+  phones:
+    id: *51
+    phone: *52
+    contact_id: *53
+    created_at: *54
+    updated_at: *55
+  schema_migrations:
+    version: *56
+primary_keys:
+  addresses: id
+  ar_internal_metadata: key
+  contacts: id
+  kinds: id
+  phones: id
+  schema_migrations: version
+data_sources:
+  addresses: true
+  ar_internal_metadata: true
+  contacts: true
+  kinds: true
+  phones: true
+  schema_migrations: true
+version: 20170921182057
